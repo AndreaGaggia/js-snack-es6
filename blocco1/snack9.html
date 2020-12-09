@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack9</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Calcola la somma e la media dei primi 10 numeri.
+    </p>
+
+
+    <script>
+        
+        const sommaPrimiXNumeri = (x) => {
+            let sum = 0;
+            for (let index = 1; index <= x; index++) {
+                sum += index
+            }
+            return sum;
+        }
+        const mediaPrimiXNumeri = (x) => {
+            let mean = sommaPrimiXNumeri(x) / x;
+            return mean;
+        }
+        console.log(sommaPrimiXNumeri(10), mediaPrimiXNumeri(10));
+
+
+
+
+
+
+    </script>
+</body>
+</html>

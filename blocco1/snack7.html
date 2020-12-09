@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack7</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Stampa le potenze di 2 fino a 1000.
+    </p>
+
+
+    <script>
+        //intendendo tutte le potenze di 2 non superiori a 1000
+        let potenza = 0;
+        let exp = 0;
+        while (potenza <= 1000) {
+            potenza = 2**exp;
+            if (potenza <= 1000) {
+                console.log(`2 alla ${exp} = ${potenza}`);
+            }
+            exp++
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack5</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+    </p>
+
+
+    <script>
+
+        const snackArr = [];
+
+        const ifOddPush = (arr) => {
+            for (let index = 1; index < 7; index++) {
+                let number = Number(prompt('inserisci un numero'));
+                if (number % 2 !== 0) {
+                    arr.push(number);
+                }
+            }
+            return arr;
+        }
+        console.log(ifOddPush(snackArr));
+
+
+
+
+    </script>
+</body>
+</html>

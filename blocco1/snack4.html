@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack4</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+    </p>
+
+
+    <script>
+
+        const invitati = ['carlo', 'mario', 'andrea', 'boris'];
+        let nomeUtente = prompt('il tuo nome prego').toLowerCase();
+
+        const inLista = (element, array) => {
+            if (array.includes(element)) {
+                alert('ok sei in lista')
+            } else {
+                alert('spiacente, non sei in lista')
+            }
+        }
+        inLista(nomeUtente, invitati);
+
+
+
+
+    </script>
+</body>
+</html>

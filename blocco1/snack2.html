@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack2</title>
+</head>
+<body>
+    <p>L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.</p>
+
+
+    <script>
+
+        let parola1 = prompt('inserisci parola');
+        let parola2 = prompt('inserisci parola');
+
+        const parolaCortaPrima = (p1, p2) => {
+            if (p1.length < p2.length) {
+                console.log(p1, p2);
+            }
+            console.log(p2, p1);
+        } 
+
+        parolaCortaPrima(parola1, parola2);
+
+
+
+
+    </script>
+</body>
+</html>
