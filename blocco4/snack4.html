@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack4</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        A) Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+        Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.<br>
+        B) Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti
+    </p>
+
+    <script>
+
+        const squadre = [
+            {
+                nome: 'milan',
+                punti: 0,
+                falli: 0
+            },
+            {
+                nome: 'juve',
+                punti: 0,
+                falli: 0
+            },
+            {
+                nome: 'inter',
+                punti: 0,
+                falli: 0
+            },
+            {
+                nome: 'napoli',
+                punti: 0,
+                falli: 0
+            },
+            {
+                nome: 'roma',
+                punti: 0,
+                falli: 0
+            },
+        ];
+
+
+        squadre.forEach(element => {
+            element.punti = Math.floor(Math.random() * 20);
+            element.falli = Math.floor(Math.random() * 40);
+        });
+
+        console.log(squadre);
+
+
+    </script>
+
+
+</body>
+</html>

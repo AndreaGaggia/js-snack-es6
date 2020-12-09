@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack3</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti proprietà: base e altezza. Calcolare perimetro e area.
+    </p>
+
+    <script>
+
+        const triangolo = {
+            base: 40,
+            altezza: 20
+        }
+
+        triangolo.ipotenusa = Math.sqrt(triangolo.base**2 + triangolo.altezza**2);
+        
+        let perimetro = triangolo.altezza + triangolo.base + triangolo.ipotenusa;
+
+        let area = (triangolo.base * triangolo.altezza) / 2;
+
+        console.log(perimetro, area);
+
+
+
+    </script>
+
+
+</body>
+</html>

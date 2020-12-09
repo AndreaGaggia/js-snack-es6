@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack2</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. Stampare a schermo la bici con peso minore.
+    </p>
+
+    <script>
+
+        const bici = [
+            {
+                nome: 'lampo',
+                peso: 23
+            },
+            {
+                nome: 'tuono',
+                peso: 20
+            },
+            {
+                nome: 'fulmine',
+                peso: 21
+            },
+            {
+                nome: 'saetta',
+                peso: 25
+            },
+        ];
+
+        bici.sort((a, b) => {
+            return a.peso - b.peso; // ordinamento ascendente per peso degli oggetti
+        });
+
+        console.log(bici[0].nome); // la bici con il peso minore è il primo elemento
+
+
+
+    </script>
+
+
+</body>
+</html>
