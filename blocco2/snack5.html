@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack5</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Scrivi una funzione per stabilire se un numero è primo. Chiedi un numero all’utente e utilizza la funzione per comunicargli se il numero inserito è primo oppure no.
+    </p>
+
+    <script>
+
+        const isPrime = numero => {
+            for (let index = 2; index < numero; index++) {
+                if (numero % index === 0) {
+                    return false;
+                }
+            }
+            return numero >= 2;
+        }
+
+        const numeroUtente = Number(prompt('inserisci un numero'));
+
+        if (isPrime(numeroUtente)) {
+            alert(`Sì, ${numeroUtente} è un numero primo!`);
+        } else {
+            alert(`No, ${numeroUtente} non è un numero primo.`);
+        }
+
+
+// function numeroPrimo(numero) {
+//     for (var i = 2; i < numero; i++) {
+//         if (numero % i === 0) {
+//             return false;
+//         }
+//     }
+//     return numero >= 2; //cioè true
+// }
+
+
+    </script>
+
+
+</body>
+</html>

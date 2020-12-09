@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack2</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
+    </p>
+
+    <script>
+
+        const nomi = ['Alberto', 'Giada', 'Marco', 'Viola', 'Sara', 'Andrea'];
+        const cognomi = ['Rossi', 'Grimaldi', 'Houston', 'Ravanelli', 'Gold', 'Martini'];
+
+        const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+        const invitati = [];
+        for (let index = 0; index < nomi.length; index++) {
+            invitati.push(`${nomi[randomInt(0, 5)]} ${cognomi[randomInt(0, 5)]}`)
+        };
+
+        invitati.forEach(element => {
+            console.log(element);
+        });
+
+
+
+    </script>
+
+
+</body>
+</html>

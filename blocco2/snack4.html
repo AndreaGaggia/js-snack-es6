@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack4</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Crea due array che hanno un numero di elementi diversi. Aggiungi elementi casuali all’array che ha meno elementi, fino a quando ne avrà tanti quanti l’altro.
+    </p>
+
+    <script>
+
+
+
+        const array1 = []
+        const array2 = []
+
+        const popolaArrayConTotNumeriCasuali = (arr, lunghezza_desiderata) => {
+            for (let index = 0; index < lunghezza_desiderata; index++) {
+                arr.push(Math.random().toFixed(2));
+            }
+        }
+
+        popolaArrayConTotNumeriCasuali(array1, 20);
+        popolaArrayConTotNumeriCasuali(array2, 50);
+        console.log(array1.length, array2.length);
+
+
+        const stessaLunghezza = (arr1, arr2) => {
+            if (arr1.length < arr2.length) {
+                while (arr1.length < arr2.length) {
+                    arr1.push(Math.random().toFixed(2));
+                }
+            } else if (arr1.length === arr2.length) {
+                console.log('Stessa lunghezza');
+            } else {
+                while (arr2.length < arr1.length) {
+                    arr2.push(Math.random().toFixed(2));
+                }
+            }
+        }
+
+        stessaLunghezza(array1, array2);
+        console.log(array1.length, array2.length);
+
+
+    </script>
+
+
+</body>
+</html>

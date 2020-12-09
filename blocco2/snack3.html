@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsnack3</title>
+</head>
+<body>
+    <p style="width: 30%; font-size: 2rem;">
+        Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
+    </p>
+
+    <script>
+
+        const arrayInt = [1, 2, 5, 76, 32, 8, 70, 43, 55, 21, 67, 89, 12];
+        
+        let sommaDispari = 0;
+        for (let index = 0; index < arrayInt.length; index++) {
+            if (index % 2 !== 0) {
+                sommaDispari += arrayInt[index];
+            }   
+        }
+        console.log(sommaDispari);
+
+
+    </script>
+
+
+</body>
+</html>
